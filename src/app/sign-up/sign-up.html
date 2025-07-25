@@ -1,0 +1,46 @@
+<div id="login-page">
+    <div class="login">
+        <h2 class="login-title">Regiter Here</h2>
+        <form class="form-login" #form="ngForm" (ngSubmit)="onclick()">
+            <!-- <label for="name">Username</label> -->
+            <div class="input-email">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" [(ngModel)]="loginData.userName" name="userName" placeholder="Enter your Username"
+                    required #userName="ngModel">
+
+            </div>
+            <div *ngIf="userName.invalid && userName.touched" class="error">Username is required</div>
+            <!-- <label for="email">E-mail</label> -->
+            <div class="input-email">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" [(ngModel)]="loginData.email" name="email" placeholder="Enter your e-mail" required
+                    email #email="ngModel">
+            </div>
+            <div *ngIf="email.invalid && email.touched" class="error">
+                <div *ngIf="email.errors?.['required']">Email is required</div>
+                <div *ngIf="email.errors?.['email']">Invalid email format</div>
+            </div>
+
+            <!-- <label for="password">Password</label> -->
+            <div class="input-password">
+                <i class="fas fa-lock icon"></i>
+                <input type="password" [(ngModel)]="loginData.pass" name="password" placeholder="Enter your password"
+                    required minlength="6" #password="ngModel">
+            </div>
+            <div *ngIf="password.invalid && password.touched" class="error">
+                <div *ngIf="password.errors?.['required']">Password is required</div>
+                <div *ngIf="password.errors?.['minlength']">Password must be at least 6 characters</div>
+            </div>
+
+            <button type="submit"><i class="fas fa-door-open"></i> Log in</button>
+        </form>
+
+        <a>Forgot your password?</a>
+       <a routerLink="/userLogin">Already have an account</a>
+    </div>
+
+    <!-- Background Section -->
+    <div class="background">
+        <h1></h1>
+    </div>
+</div>
