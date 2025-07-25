@@ -1,34 +1,27 @@
 <div id="login-page">
   <div class="login">
     <!-- Login Title -->
-    <h2 class="login-title">Admin Login</h2>
+    <h2 class="login-title">Login Here</h2>
     <p class="notice">Please login to access your Software</p>
 
     <!-- Login Form -->
-    <form class="form-login">
+    <form class="form-login" #form="ngForm" (ngSubmit)="onclick()">
       <label for="email">E-mail</label>
       <div class="input-email">
         <i class="fas fa-envelope icon"></i>
-        <input type="email"name="email" placeholder="Enter your e-mail" required>
+        <input type="email" [(ngModel)]="loginData.email" name="email" placeholder="Enter your e-mail" required>
       </div>
-
+      
       <label for="password">Password</label>
       <div class="input-password">
         <i class="fas fa-lock icon"></i>
-        <input type="password" name="password" placeholder="Enter your password" required>
-      </div>
-
-      <div class="checkbox">
-        <label for="remember">
-          <input type="checkbox" name="remember">
-          Remember me
-        </label>
+        <input type="password" [(ngModel)]="loginData.pass" name="password" placeholder="Enter your password" required>
       </div>
 
       <button type="submit"><i class="fas fa-door-open"></i> Log in</button>
     </form>
-
-    <a>Forgot your password?</a>    
+    <a>Forgot your password?</a>
+    <a routerLink="/SignUp">Not have an account</a>
   </div>
 
   <!-- Background Section -->
@@ -36,7 +29,3 @@
     <h1></h1>
   </div>
 </div>
-
-
-
-

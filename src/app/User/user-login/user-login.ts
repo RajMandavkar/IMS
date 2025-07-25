@@ -13,7 +13,7 @@ import Swal from 'sweetalert2';
 })
 export class UserLogin {
   private http = inject(HttpClient);
-  private router = inject(Router); // 👈 Inject Router
+  private router = inject(Router); 
 
   loginData = {
     email: '',
