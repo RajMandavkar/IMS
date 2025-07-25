@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterModule } from '@angular/router';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -30,7 +31,7 @@ export class SignUp {
 
     this.http.post("http://localhost:3000/users", this.loginData).subscribe({
       next: (res: any) => {
-        alert('Registered Successfully');
+        Swal.fire("Success","Signup Successfull, Kindly Login :)","success");
          this.router.navigate(['/userLogin']);
       },
       error: (err) => {
