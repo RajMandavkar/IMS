@@ -25,7 +25,8 @@ export class SignUp {
 
   onclick() {
     if (!this.loginData.userName || !this.loginData.email || !this.loginData.pass) {
-      alert("Please fill all the fields");
+      // alert("Please fill all the fields");
+      Swal.fire("Error", "Please fill in all fields!", "error");
       return;
     }
 
@@ -36,7 +37,8 @@ export class SignUp {
       },
       error: (err) => {
         console.error('Error occurred:', err);
-        alert('Something went wrong while adding user');
+        // alert('Something went wrong while adding user');lll
+        Swal.fire("Error", "Something went wrong while adding user!", "error");
       },
     });
   }
