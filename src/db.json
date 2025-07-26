@@ -1,9 +1,16 @@
 {
-    "users": [
+  "users": [
     {
       "userName": "Raj",
       "email": "raj@123",
       "pass": "Raj@121312"
     }
-]
+  ],
+  "admin": [
+    {
+      "userName": "Raj",
+      "email": "raj@123",
+      "pass": "RajM@2630"
+    }
+  ]
 }

@@ -49,6 +49,7 @@
       "pass": "lkjhgff"
     },
     {
+<<<<<<< HEAD
       "id": "6853",
       "userName": "Raj",
       "email": "jaa@123",
@@ -59,6 +60,55 @@
       "userName": "MIK",
       "email": "mik@123",
       "pass": "123456"
+=======
+      "userName": "Raj Mandavkar",
+      "email": "mandavkarraj7@gmail.com",
+      "pass": "RajM@2630",
+      "id": "O2yT5ay"
+    },
+    {
+      "userName": "Raj Mandavkar",
+      "email": "MANOJJADHAV292@GMAIL.COM",
+      "pass": "Raj@1234",
+      "id": "xk6vPF3"
+    },
+    {
+      "userName": "Raj Mandavkar",
+      "email": "SUSHILTHOMBARE3@GMAL.COM",
+      "pass": "asxsaxsaxs",
+      "id": "ucDDOKU"
+    },
+    {
+      "userName": "Raj Mandavkar",
+      "email": "MANOJJADHAV292@GMAIL.COM",
+      "pass": "sddscdde",
+      "id": "_2Zj_3h"
+    },
+    {
+      "userName": "dasasdasdas",
+      "email": "MANOJJADHAV292@GMAIL.COM",
+      "pass": "asdsad",
+      "id": "xJc60X0"
+    },
+    {
+      "userName": "Raj Mandavkar",
+      "email": "MANOJJADHAV292@GMAIL.COM",
+      "pass": "wqidhwuygdsuy",
+      "id": "m_d1pKj"
+    },
+    {
+      "userName": "Raj Mandavkar",
+      "email": "MANOJJADHAV292@GMAIL.COM",
+      "pass": "asxjsksag",
+      "id": "LY1QyT_"
+    }
+  ],
+  "admin": [
+    {
+      "userName": "Raj",
+      "email": "raj@123",
+      "pass": "RajM@2630"
+>>>>>>> 40a86cc0bfd3df0981cf7abd9334253e3eb48c51
     }
   ]
 }
