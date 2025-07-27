@@ -49,22 +49,10 @@
       "pass": "lkjhgff"
     },
     {
-<<<<<<< HEAD
       "id": "6853",
       "userName": "Raj",
       "email": "jaa@123",
       "pass": "jaa@123"
-    },
-    {
-      "id": "6ec4",
-      "userName": "MIK",
-      "email": "mik@123",
-      "pass": "123456"
-=======
-      "userName": "Raj Mandavkar",
-      "email": "mandavkarraj7@gmail.com",
-      "pass": "RajM@2630",
-      "id": "O2yT5ay"
     },
     {
       "userName": "Raj Mandavkar",
@@ -101,14 +89,12 @@
       "email": "MANOJJADHAV292@GMAIL.COM",
       "pass": "asxjsksag",
       "id": "LY1QyT_"
-    }
-  ],
-  "admin": [
+    },
     {
-      "userName": "Raj",
-      "email": "raj@123",
-      "pass": "RajM@2630"
->>>>>>> 40a86cc0bfd3df0981cf7abd9334253e3eb48c51
+      "userName": "Raj Mandavkar",
+      "email": "SUSHILTHOMBARE3@GMAL.COM",
+      "pass": "Sushil@123",
+      "id": "Ksh1c16"
     }
   ]
 }

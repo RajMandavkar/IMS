@@ -4,16 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
-
-
 @Component({
-  selector: 'app-login',
+  selector: 'app-admin-login',
   imports: [FormsModule],
-  templateUrl: './login.html',
-  styleUrl: './login.css'
+  templateUrl: './admin-login.html',
+  styleUrl: './admin-login.css'
 })
-export class Login {
-  private http = inject(HttpClient);
+export class AdminLogin {
+
+ private http = inject(HttpClient);
   private router = inject(Router); 
 
   loginData = {
@@ -39,7 +38,7 @@ export class Login {
           debugger
           Swal.fire("Success", "Signup Successfull, Kindly Login :)", "success");
           localStorage.setItem('isLoggedIn', 'true');
-          this.router.navigate(['/']);
+          this.router.navigate(['/admindash']);
         } else {
           debugger
           // alert('Invalid email or password');

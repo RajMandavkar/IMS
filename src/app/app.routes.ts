@@ -2,10 +2,10 @@ import { Routes } from '@angular/router';
 import { AdminDashboard } from './Admin/admin-dashboard/admin-dashboard';
 import { Home } from './home/home';
 import { UserDashboard } from './User/user-dashboard/user-dashboard';
-import { Login } from './login/login';
 import { SignUp } from './sign-up/sign-up';
 import { UserLogin } from './User/user-login/user-login';
 import { authGuard } from './auth-guard';
+import { AdminLogin } from './Admin/admin-login/admin-login';
 
 
 export const routes: Routes = [
@@ -14,8 +14,8 @@ export const routes: Routes = [
         component: Home
     },
     {
-        path: "login",
-        component: Login
+        path: "adminLogin",
+        component: AdminLogin
     },
     {
         path: "SignUp",
