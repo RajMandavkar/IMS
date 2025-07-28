@@ -4,7 +4,7 @@
         <form class="form-login" #form="ngForm" (ngSubmit)="onclick()">
             <!-- <label for="name">Username</label> -->
             <div class="input-email">
-                <i class="fas fa-envelope icon"></i>
+                <i class="fas fa-user icon"></i>
                 <input type="email" [(ngModel)]="loginData.userName" name="userName" placeholder="Enter your Username"
                     required #userName="ngModel">
 
@@ -32,7 +32,7 @@
                 <div *ngIf="password.errors?.['minlength']">Password must be at least 6 characters</div>
             </div>
 
-            <button type="submit"><i class="fas fa-door-open"></i> Log in</button>
+            <button type="submit"><i class="fas fa-door-open"></i>Register</button>
         </form>
 
         <a>Forgot your password?</a>

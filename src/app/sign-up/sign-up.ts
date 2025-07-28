@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-sign-up',
-  imports: [FormsModule, CommonModule,RouterModule,RouterLink],
+  imports: [FormsModule,CommonModule,RouterModule,RouterLink],
   templateUrl: './sign-up.html',
   styleUrl: './sign-up.css'
 })
@@ -37,7 +37,7 @@ export class SignUp {
       },
       error: (err) => {
         console.error('Error occurred:', err);
-        // alert('Something went wrong while adding user');lll
+        // alert('Something went wrong while adding user');
         Swal.fire("Error", "Something went wrong while adding user!", "error");
       },
     });

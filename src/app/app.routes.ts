@@ -6,6 +6,8 @@ import { SignUp } from './sign-up/sign-up';
 import { UserLogin } from './User/user-login/user-login';
 import { authGuard } from './auth-guard';
 import { AdminLogin } from './Admin/admin-login/admin-login';
+import { UserList } from './Admin/user-list/user-list';
+import { AddProduct } from './Admin/add-product/add-product';
 
 
 export const routes: Routes = [
@@ -32,6 +34,16 @@ export const routes: Routes = [
     {
         path: "userdash",
         component: UserDashboard,
-        canActivate: [authGuard]   
+        canActivate:[authGuard]   
+    },
+    {
+        path: "userlist",
+        component: UserList,
+        canActivate:[authGuard]   
+    },
+    {
+        path: "addProduct",
+        component: AddProduct,
+        canActivate:[authGuard]   
     },
 ];

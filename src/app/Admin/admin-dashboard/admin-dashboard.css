@@ -1,113 +1,46 @@
-* {
+.topnav {
+  background-color: #7c7272;
+  padding: 10px 20px;
+  position: sticky; /* or fixed if you want it always visible */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topnav ul {
+  list-style: none;
+  display: flex; /* makes list horizontal */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-body {
-  position: relative;
-}
-.sidenav {
-  position: fixed;
-  top: 0;   
-  left: 0;
-  width: 250px;
-  background: #aed1e0;
-  height: 100vh;
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  color: #fafafa;
-  padding: 15px;
-  transition: 0.3s linear;
-  margin-top: 74px;
 }
-.sidenav h2 {
-  font-size: 36px;
+
+.topnav li {
+  margin-right: 20px;
 }
-.sidenav .gap {
-  width: 100%;
-}
-.sidenav ul {
-  width: 100%;
-  list-style: none;
-}
-.sidenav ul li {
-  margin: 15px;
-}
-.sidenav ul li a {
-  color: #080808;
+
+.topnav a {
+  color: white;
   text-decoration: none;
-  font-size: 1.25em;
-  transition: 0.3s ease color;
+  font-weight: 500;
+  padding: 8px 12px;
 }
-.sidenav ul li a:hover {
-  color: #1dd1a1; /* Choose Any Color of Hover Effect */
+
+.topnav a:hover {
+  background-color: #444;
+  border-radius: 4px;
 }
-main {
-  margin-left: 250px;
-  transition: 0.3s ease-in-out;
-  z-index: 0;
-}
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  margin: 20px;
-  background: #353b48;
-  display: none;
-  align-items: center;
-  padding: 8px;
+
+.topnav button {
+  background: none;
+  border: none;
+  color: white;
   cursor: pointer;
-  border-radius: 8px;
-  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  padding: 8px 12px;
 }
-.menu:hover {
-  opacity: 0.5;
-}
-section {
-  padding: 36px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
-section h2 {
-  font-size: 2em;
-}
-section p {
-  margin: 10px 0;
-}
-.blue {
-  background: #0092ff;
-}
-.green {
-  background: #ffffff;
-}
-@media screen and (max-width: 800px) {
-  .sidenav {
-    left: -100%;
-    z-index: 50;
-  }
-  .sidenav.active {
-    left: 0;
-  }
-  main {
-    margin-left: 0;
-  }
-  .menu {
-    display: flex;
-  }
-}
-@media screen and (max-width: 500px) {
-  .sidenav {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .sidenav ul li {
-    text-align: center;
-  }
+
+.topnav button:hover {
+  background-color: #444;
+  border-radius: 4px;
 }
