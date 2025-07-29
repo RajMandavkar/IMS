@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -9,4 +10,14 @@ import { RouterModule } from '@angular/router';
 })
 export class AdminDashboard {
 
+   constructor(private router: Router) {}
+
+onclick(){
+      debugger
+      localStorage.removeItem('isLoggedIn');
+      Swal.fire("Success", "Successfylly Logged Out, Please Relogin for Access)", "success");
+      this.router.navigate(['/adminLogin']);
+    }
 }
+
+

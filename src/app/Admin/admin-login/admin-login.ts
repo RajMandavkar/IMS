@@ -3,10 +3,11 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { Header } from '../../header/header';
 
 @Component({
   selector: 'app-admin-login',
-  imports: [FormsModule],
+  imports: [FormsModule,Header],
   templateUrl: './admin-login.html',
   styleUrl: './admin-login.css'
 })
@@ -31,7 +32,7 @@ export class AdminLogin {
       return;
     }
 
-    this.http.get<any[]>(`http://localhost:3000/users?email=${email}&pass=${pass}`).subscribe({
+    this.http.get<any[]>(`http://localhost:4000/admin?email=${email}&pass=${pass}`).subscribe({
       next: (res) => {
         debugger
         if (res.length > 0) {

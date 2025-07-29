@@ -4,11 +4,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterModule } from '@angular/router';
 import Swal from 'sweetalert2';
+import { Header } from '../header/header';
 
 
 @Component({
   selector: 'app-sign-up',
-  imports: [FormsModule,CommonModule,RouterModule,RouterLink],
+  imports: [FormsModule,CommonModule,RouterModule,RouterLink,Header],
   templateUrl: './sign-up.html',
   styleUrl: './sign-up.css'
 })

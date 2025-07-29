@@ -17,7 +17,11 @@ http = inject(HttpClient);
 
 ngOnInit(): void {
   debugger
-    this.http.get<any[]>('http://localhost:3000/users').subscribe(res => this.users = res);
+    this.http.get<any[]>('http://localhost:3000/users').subscribe((res:any)=>{
+      debugger
+      this.users = res
+    });
+    
   }
 
 }

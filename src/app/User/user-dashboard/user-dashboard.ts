@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router,  RouterModule } from '@angular/router';
 import Swal from 'sweetalert2';
+import { Header } from '../../header/header';
 
 @Component({
   selector: 'app-user-dashboard',
+  imports: [RouterModule,Header],
   templateUrl: './user-dashboard.html',
   styleUrls: ['./user-dashboard.css']
 })
